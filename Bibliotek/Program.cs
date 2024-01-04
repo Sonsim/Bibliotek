@@ -13,6 +13,8 @@
             PrintAll(library);
             Console.ReadKey();
 
+            SelectBooK(library);
+            Console.ReadKey();
             var adding = true;
             while (adding)
             {
@@ -28,21 +30,33 @@
 
         }
 
-        private static void Menu()
+        private static Book SelectBooK(List<ILendable> library)
         {
-            Console.Clear();
-            Console.WriteLine("What would you like to do? \n" +
-                              "1. Show all books in libray \n" +
-                              "2. Add book to library \n" +
-                              "3. Loan book \n" +
-                              "4. Return book \n" +
-                              "5. Export list of books to textfile \n" +
-                              "6. Exit program");
+            Console.WriteLine("Which book do you want to select?");
+            int i = 1;
+            foreach (Book book in library)
+            {
+                
+                Console.WriteLine($"{i}. {book.getTitle()}");
+                i++;
+            }
+
             var ans = Console.ReadLine();
 
-            
+            foreach (Book book in library)
+            {
+                if (ans.ToLower() == book.getTitle())
+                {
+                    {
+                        return book;
+                        
+                    }
+                }
+            }
 
-        } 
+            return null;
+        }
+
 
         private static void borrow()
         {
