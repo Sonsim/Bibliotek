@@ -1,0 +1,28 @@
+﻿
+
+
+Sterk typing, inkl. konvertering mellom de grunnleggende datatypene
+Grunnleggende strukturert programmering i C#
+Input og output, fil, tastatur, skjerm
+Objekter av egne klasser, innkapsling
+Oversette datastrukturer fra JavaScript til C#
+
+Har prøvd å lage en oppgave som inneholder alt. Gå over hver av temaene før du begynner på den. Og dette er bare et eksempel for å hjelpe deg å øve - om du gjør den ferdig betyr ikke det at du kommer inn hvis du skjønner. Du må fortsatt ha en codealong
+
+Bibliotek
+Lag en klasse Book som representerer en bok med attributter som Title (string), Author (string), ISBN (string) og PublicationYear (int).
+Opprett en liste av bøker og fyll den med minst tre eksempler.
+
+Implementer en metode som skriver ut alle bøkene i biblioteket, inkludert detaljer som tittel, forfatter, ISBN og publiseringsår.
+Lag en metode som lar brukeren legge til en ny bok i biblioteket ved å skrive inn bokdetaljene fra tastaturet.
+
+Legg til den nye boken i listen og lagre biblioteket i en tekstfil.
+Utvid Book-klassen ved å legge til en ny klasse EBook som arver fra Book. 
+
+Legg til en ny egenskap, for eksempel FileSizeInMB, som kun er tilgjengelig for e-bøker
+Lag en metode for å eksportere EBook instansen som en .json fil.
+
+Implementer et interface, for eksempel ILendable, som krever metoder for å låne ut og returnere en bok.
+Implementer dette interface i begge klassene.
+
+Lag en metode som tar inn en JSON fil som representerer bokinformasjon og oversetter den til en liste av C# Book-objekter.
